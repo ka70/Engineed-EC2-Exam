@@ -5,6 +5,14 @@ terraform {
       version = "~> 5.0"
     }
   }
+  # tfstateをterraform cloudで管理
+  cloud {
+    organization = "ka70ka70"
+
+    workspaces {
+      name = "engineed-ec2-exam"
+    }
+  }
 }
 
 provider "aws" {
