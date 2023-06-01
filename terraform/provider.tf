@@ -9,6 +9,6 @@ terraform {
 
 provider "aws" {
   # shared_credentials_file = "[$HOME/.aws/credentials]"
-  # profile                 = "engineed"
+  profile                 = "engineed"
   region = "ap-northeast-1"
 }
